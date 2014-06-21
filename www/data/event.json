@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "First event",
+    "description": "This is awesome."
+  },
+  {
+    "id": 2,
+    "name": "Second event",
+    "description": "This is also okay."
+  },
+  {
+    "id": 1,
+    "name": "First event",
+    "description": "This is awesome."
+  },
+  {
+    "id": 2,
+    "name": "Second event",
+    "description": "This is also okay."
+  },
+  {
+    "id": 1,
+    "name": "First event",
+    "description": "This is awesome."
+  },
+  {
+    "id": 2,
+    "name": "Second event",
+    "description": "This is also okay."
+  },
+  {
+    "id": 1,
+    "name": "First event",
+    "description": "This is awesome."
+  },
+  {
+    "id": 2,
+    "name": "Second event",
+    "description": "This is also okay."
+  },
+  {
+    "id": 1,
+    "name": "First event",
+    "description": "This is awesome."
+  },
+  {
+    "id": 2,
+    "name": "Second event",
+    "description": "This is also okay."
+  },
+  {
+    "id": 1,
+    "name": "First event",
+    "description": "This is awesome."
+  },
+  {
+    "id": 2,
+    "name": "Second event",
+    "description": "This is also okay."
+  },
+  {
+    "id": 1,
+    "name": "First event",
+    "description": "This is awesome."
+  },
+  {
+    "id": 2,
+    "name": "Second event",
+    "description": "This is also okay."
+  },
+  {
+    "id": 1,
+    "name": "First event",
+    "description": "This is awesome."
+  },
+  {
+    "id": 2,
+    "name": "Second event",
+    "description": "This is also okay."
+  },
+  {
+    "id": 1,
+    "name": "First event",
+    "description": "This is awesome."
+  },
+  {
+    "id": 2,
+    "name": "Second event",
+    "description": "This is also okay."
+  }
+]

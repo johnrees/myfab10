@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cordova Geolocation Example</title>
+
+    <link rel="stylesheet" href="/vendor/ionic/css/ionic.css" />
+    <link rel="stylesheet" href="/stylesheets/application.css" />
+
+    <link rel="stylesheet" href="/components/leaflet-0.7.2/leaflet.css" />
+
+    <script src="/components/leaflet-0.7.2/leaflet.js"></script>
+    <script src="/components/zepto/zepto.min.js"></script>
+    <script src="/javascripts/application.js"></script>
+
+    <!-- cordova.js is served from localhost to ensure the correct version -->
+    <script src="http://localhost/cordova.js"></script>
+    <script src="/components/steroids-js/steroids.js"></script>
+
+    <script>
+
+    // Define our results DOM element object
+    var resultsElem = null;
+
+    // Wait for Cordova to load
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    function onDeviceReady() {
+        navigator.geolocation.watchPosition(geolocationDataReceived, geolocationError, { enableHighAccuracy: true });
+        resultsElem = document.querySelector('#geolocation-results');
+    }
+
+    function geolocationDataReceived(position) {
+        resultsElem.innerHTML = '<strong>Latitude:</strong> '           + position.coords.latitude         + '<br>' +
+                                '<strong>Longitude:</strong> '          + position.coords.longitude        + '<br>' +
+                                '<strong>Altitude:</strong> '           + position.coords.altitude         + '<br>' +
+                                '<strong>Accuracy:</strong> '           + position.coords.accuracy         + '<br>' +
+                                '<strong>Altitude Accuracy:</strong> '  + position.coords.altitudeAccuracy + '<br>' +
+                                '<strong>Heading:</strong> '            + position.coords.heading          + '<br>' +
+                                '<strong>Speed:</strong> '              + position.coords.speed            + '<br>' +
+                                '<strong>Timestamp:</strong> '          + position.timestamp;
+        window.map.setView(new L.LatLng(position.coords.latitude, position.coords.longitude), 14);
+    }
+
+    // The error callback receives a PositionError object
+    function geolocationError(error) {
+        alert('Geolocation error! \n\n Error code: ' + error.code + '\n' + 'Error message: ' + error.message);
+    }
+
+    </script>
+  </head>
+  <body class="content">
+    <div id="map"></div>
+    <div class="padding">
+      <h1>Geolocation Example</h1>
+      <p id="geolocation-results">Waiting for geolocation data...</p>
+    </div>
+  </body>
+</html>

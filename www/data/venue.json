@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "DHUB (Main Venue)",
+    "description": "FAB10Barcelona headquarters. Will host the super Fab Lab, daily meetings, workshops and exhibitions."
+  },
+  {
+    "id": 2,
+    "name": "Fab Lab BCN @ IAAC",
+    "description": "One of the first Fab Labs in Europe, and host for FAB10Barcelona."
+  },
+  {
+    "id": 3,
+    "name": "Valldaura Green Fab Lab",
+    "description": "The next generation of Fab Labs. Will host special activities during the week."
+  },
+  {
+    "id": 4,
+    "name": "Ateneu de Fabricació Les Corts",
+    "description": "The city council’s first Fab Lab in Barcelona, and the first public Fab Lab in the City."
+  }
+]

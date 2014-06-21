@@ -1,0 +1,11 @@
+<div ng-controller="IndexCtrl">
+  <ul class="list">
+    <li class="item item-divider">Tuesday 1st July</li>
+    <li class="item item-icon-right" ng-click="open(event.id)" ng-repeat="event in events">
+      9:00 - 11:30
+      {{ event.name }}
+      <i class="icon ion-ios7-arrow-right"></i>
+    </li>
+    <li class="item item-divider">Wednesday 2nd July</li>
+  </ul>
+</div>

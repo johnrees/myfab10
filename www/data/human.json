@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "First human",
+    "description": "This is awesome."
+  },
+  {
+    "id": 2,
+    "name": "Second human",
+    "description": "This is also okay."
+  }
+]

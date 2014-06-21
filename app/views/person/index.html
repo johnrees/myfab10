@@ -1,0 +1,8 @@
+<div ng-controller="IndexCtrl">
+  <ul class="list">
+    <li class="item item-icon-right" ng-click="open(person.id)" ng-repeat="person in persons">
+      Person: {{ person.name }}
+      <i class="icon ion-ios7-arrow-right"></i>
+    </li>
+  </ul>
+</div>

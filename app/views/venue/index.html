@@ -1,0 +1,13 @@
+<!-- <div id="map"></div> -->
+<div ng-controller="IndexCtrl">
+  <ul class="list">
+    <li class="item item-thumbnail-left item-icon-right" ng-click="open(venue.id)" ng-repeat="venue in venues">
+
+
+        <img src="http://localhost/images/venues/{{ venue.id }}.jpg" />
+        <h2>{{ venue.name }}</h2>
+        <p>{{ venue.description }}</p>
+        <i class="icon ion-ios7-arrow-right"></i>
+    </li>
+  </ul>
+</div>

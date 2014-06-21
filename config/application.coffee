@@ -4,22 +4,46 @@
 steroids.config.name = "myfab10"
 
 # ## Start Location
-steroids.config.location = "http://localhost/index.html"
+steroids.config.location = "http://localhost/views/venue/index.html"
+
+# steroids.config.drawers =
+#   left:
+#     id: "leftDrawer"
+#     location: "http://localhost/leftDrawer.html"
+#     showOnAppLoad: false
+#     widthOfDrawerInPixels: 200
+#   options:
+#     centerViewInteractionMode: "Full"
+#     closeGestures: ["PanNavBar", "PanCenterView", "TapCenterView"]
+#     openGestures: ["PanNavBar", "PanCenterView"]
+#     showShadow: false
+#     stretchDrawer: true
+#     widthOfLayerInPixels: 0
 
 # ## Tab Bar
-# steroids.config.tabBar.enabled = true
-# steroids.config.tabBar.tabs = [
-#   {
-#     title: "Index"
-#     icon: "icons/pill@2x.png"
-#     location: "http://localhost/index.html"
-#   },
-#   {
-#     title: "Internet"
-#     icon: "icons/telescope@2x.png"
-#     location: "http://www.google.com"
-#   }
-# ]
+steroids.config.tabBar.enabled = true
+steroids.config.tabBar.tabs = [
+  {
+    title: "Schedule"
+    icon: "icons/calendar@2x.png"
+    location: "http://localhost/views/event/index.html"
+  },
+  {
+    title: "Venues"
+    icon: "icons/location@2x.png"
+    location: "http://localhost/views/venue/index.html"
+  },
+  {
+    title: "People"
+    icon: "icons/android-contact@2x.png"
+    location: "http://localhost/views/human/index.html"
+  },
+  {
+    title: "Map"
+    icon: "icons/map@2x.png"
+    location: "http://localhost/map.html"
+  }
+]
 
 # steroids.config.tabBar.tintColor = "#000000"
 # steroids.config.tabBar.tabTitleColor = "#00aeef"
@@ -36,12 +60,12 @@ steroids.config.location = "http://localhost/index.html"
 #   }
 # ]
 
-# ## Drawers
+## Drawers
 # steroids.config.drawers =
 #   left:
 #     id: "leftDrawer"
 #     location: "http://localhost/leftDrawer.html"
-#     showOnAppLoad: true
+#     showOnAppLoad: false
 #     widthOfDrawerInPixels: 200
 #   right:
 #     id: "rightDrawer"
@@ -62,7 +86,7 @@ steroids.config.location = "http://localhost/index.html"
 #   location: "http://localhost/initialView.html"
 
 # ## Navigation Bar
-steroids.config.navigationBar.tintColor = "#00aeef"
+steroids.config.navigationBar.tintColor = "#16AA62"
 steroids.config.navigationBar.titleColor = "#ffffff"
 steroids.config.navigationBar.buttonTintColor = "#ffffff"
 
